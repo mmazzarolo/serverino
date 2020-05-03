@@ -73,7 +73,7 @@ Usage
 ## Contributing
 
 Each contribute is welcome!  
-Please, checkout the [contributing guidelines](.github/CONTRIBUTING.md).
+Please, checkout the [contributing guidelines](./CONTRIBUTING.md).
 
 ## License
 

@@ -22,11 +22,13 @@ jobs:
   lint:
     runs-on: ubuntu-latest
     name: Lint
+    needs: install
     steps:
       - run: npm run lint
 
   test:
     runs-on: ubuntu-latest
     name: Test
+    needs: install
     steps:
       - run: npm run test

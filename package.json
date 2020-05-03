@@ -1,0 +1,74 @@
+{
+  "name": "serverino",
+  "version": "1.0.0",
+  "description": "Tiny CLI-based static server",
+  "main": "index.js",
+  "bin": {
+    "serverino": "cli.js"
+  },
+  "files": [
+    "cli.js",
+    "index.js"
+  ],
+  "keywords": [
+    "server",
+    "cli",
+    "static",
+    "local",
+    "localhost",
+    "secure",
+    "https",
+    "ssl"
+  ],
+  "author": "Mazzarolo Matteo",
+  "homepage": "https://github.com/mmazzarolo/serverino",
+  "license": "AGPL-3.0",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mmazzarolo/serverino"
+  },
+  "scripts": {
+    "lint": "eslint ./",
+    "lint:fix": "npm run lint -- --fix",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "chalk": "^4.0.0",
+    "express": "^4.17.1",
+    "https-localhost": "^4.5.2",
+    "meow": "^6.1.1"
+  },
+  "devDependencies": {
+    "eslint": "^6.8.0",
+    "eslint-config-prettier": "^6.11.0",
+    "eslint-plugin-prettier": "^3.1.3",
+    "husky": "^4.2.5",
+    "lint-staged": "^10.2.2",
+    "prettier": "^2.0.5"
+  },
+  "eslintConfig": {
+    "extends": ["eslint:recommended", "plugin:prettier/recommended"],
+    "parserOptions": {
+      "ecmaVersion": 9,
+      "sourceType": "module"
+    },
+    "env": {
+      "node": true,
+      "es6": true,
+      "commonjs": true
+    }
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "*.{js,jsx,ts,tsx}": [
+      "npm run lint:fix"
+    ],
+    "*.md": [
+      "prettier --write"
+    ]
+  }
+}

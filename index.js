@@ -1,5 +1,6 @@
 #!/usr/bin/env node
 "use strict";
+
 const express = require("express");
 const resolve = require("path").resolve;
 const https = require("https");

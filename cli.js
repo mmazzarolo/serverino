@@ -1,22 +1,23 @@
 #!/usr/bin/env node
 "use strict";
+
 const meow = require("meow");
 const serverino = require("./index.js");
 
 const cli = meow(
   `
-	Usage
-	  $ serverino [dir] [path]
-	Options
-	  --port -p     Port
-	  --secure -s   Use HTTPS
-	  --cors -c     Set "Access-Control-Allow-Origin" to "*"
-	  --verbose -v  Log requests
-	Examples
+  Usage
+    $ serverino [dir] [path]
+  Options
+    --port -p     Port
+    --secure -s   Use HTTPS
+    --cors -c     Set "Access-Control-Allow-Origin" to "*"
+    --verbose -v  Log requests
+  Examples
     $ serverino
     $ serverino ./dist
     $ serverino ./dist /admin/
-	Run without arguments serve the current directory on http:/localhost:8080/.
+  Run without arguments serve the current directory on http:/localhost:8080/.
 `,
   {
     inferType: true,

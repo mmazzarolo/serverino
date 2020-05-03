@@ -17,7 +17,7 @@ const cli = meow(
     $ serverino
     $ serverino ./dist
     $ serverino ./dist /admin/
-  Run without arguments serve the current directory on http:/localhost:8080/.
+  Run without arguments serves the current directory on http:/localhost:8080/.
 `,
   {
     inferType: true,

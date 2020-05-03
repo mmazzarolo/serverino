@@ -7,8 +7,6 @@ const https = require("https");
 const certs = require("https-localhost/certs");
 const chalk = require("chalk");
 
-const a = 1;
-
 const createApp = function (options = {}) {
   const {
     root = process.cwd(),

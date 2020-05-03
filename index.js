@@ -39,22 +39,25 @@ const createApp = function (options = {}) {
   if (verbose) {
     app.use(function (req, res, next) {
       const time = new Date().toISOString().substr(11, 8);
-      console.log(
+      console.info(
         chalk.dim(`[${time}] › `) + chalk.green(`${req.method} `) + req.url
       );
       next();
     });
   }
 
-  app.serve = function () {
+  app.serve = function (shouldStartListening = true) {
     app.use(path, express.static(resolve(root)));
-    app.listen(port, function () {
-      const servedDir = options.root ? options.root : "the current directory";
-      const address = `http${secure ? "s" : ""}://localhost:${port}${
-        path ? path : ""
-      }`;
-      console.info(`Serving ${servedDir} on ${chalk.yellowBright(address)}`);
-    });
+    if (shouldStartListening) {
+      return app.listen(port, function () {
+        const servedDir = options.root ? options.root : "the current directory";
+        const address = `http${secure ? "s" : ""}://localhost:${port}${
+          path ? path : ""
+        }`;
+        console.info(`Serving ${servedDir} on ${chalk.yellowBright(address)}`);
+      });
+    }
+    return app;
   };
 
   return app;

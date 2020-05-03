@@ -77,7 +77,7 @@ Please, checkout the [contributing guidelines](.github/CONTRIBUTING.md).
 
 ## License
 
-Is released under [AGPL-3.0 - GNU Affero General Public License v3.0](LICENSE).
+Is released under [AGPL-3.0 - GNU Affero General Public License v3.0](./LICENSE.md).
 
 ### Briefly:
 

@@ -16,7 +16,7 @@ Thanks to locally-trusted development certificates it can also host your static 
 
 No setup required.
 
-Under the hood Serverino is powered by [Express](https://expressjs.com/) and [https-localhost](https://github.com/daquinoaldo/https-localhost).
+Serverino is inspired by [Zeit's Serve](https://github.com/zeit/serve) and is powered by [Express](https://expressjs.com/) and [https-localhost](https://github.com/daquinoaldo/https-localhost).
 
 ## Usage
 

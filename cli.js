@@ -15,8 +15,8 @@ const cli = meow(
     --verbose -v  Log requests
   Examples
     $ serverino
-    $ serverino ./dist
-    $ serverino ./dist /admin/
+    $ serverino ~/build
+    $ serverino dist /admin/
   Run without arguments serves the current directory on http:/localhost:8080/.
 `,
   {
@@ -51,14 +51,14 @@ process.on("uncaughtException", function (err) {
     case "EACCES":
       console.error(
         "EACCES: run as administrator to use the default ports 443 and 80. " +
-          "You can also change port with: `serverino ./dist -p 1337`."
+          "You can also change port with: `serverino -p 1337`."
       );
       break;
     case "EADDRINUSE":
       console.error(
         "EADDRINUSE: another service on your machine is using " +
           "the current port.\nStop it or change port with:" +
-          "`serverino ./dist -p 1337`."
+          "`serverino -p 1337`."
       );
       break;
     default:

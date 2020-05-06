@@ -1,3 +1,10 @@
+## [1.0.1](https://github.com/mmazzarolo/serverino/compare/v1.0.0...v1.0.1) (2020-05-06)
+
+
+### Bug Fixes
+
+* Testing fix bump ([0623bed](https://github.com/mmazzarolo/serverino/commit/0623bed68d18df398bb69647515ed8e627c872d6))
+
 # 1.0.0 (2020-05-06)
 
 

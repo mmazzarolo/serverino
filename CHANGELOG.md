@@ -1,3 +1,10 @@
+## [1.0.2](https://github.com/mmazzarolo/serverino/compare/v1.0.1...v1.0.2) (2020-07-22)
+
+
+### Bug Fixes
+
+* **security:** Dependencies update ([#7](https://github.com/mmazzarolo/serverino/issues/7)) ([90f1e57](https://github.com/mmazzarolo/serverino/commit/90f1e579c14fecc2cabb7f25bc4015ffa82d36d3))
+
 ## [1.0.1](https://github.com/mmazzarolo/serverino/compare/v1.0.0...v1.0.1) (2020-05-06)
 
 

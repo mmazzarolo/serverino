@@ -70,8 +70,13 @@ process.on("uncaughtException", function (err) {
 
 const [root, path] = cli.input;
 
+let _path = path || "";
+if (path && !path.startsWith("/")) {
+  _path = `/${_path}`;
+}
+
 serverino({
   root: root,
-  path: path,
+  path: _path,
   ...cli.flags,
 }).serve();

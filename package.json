@@ -1,6 +1,6 @@
 {
   "name": "serverino",
-  "version": "1.0.2",
+  "version": "1.1.0",
   "description": "Tiny CLI-based static server",
   "main": "index.js",
   "bin": {

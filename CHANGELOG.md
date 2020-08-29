@@ -1,3 +1,10 @@
+# [1.1.0](https://github.com/mmazzarolo/serverino/compare/v1.0.2...v1.1.0) (2020-08-29)
+
+
+### Features
+
+* Automatically add leading slash to the path ([#8](https://github.com/mmazzarolo/serverino/issues/8)) ([7327c28](https://github.com/mmazzarolo/serverino/commit/7327c281a8d4cdf0c155d2fe3e1f8b035432e5ce))
+
 ## [1.0.2](https://github.com/mmazzarolo/serverino/compare/v1.0.1...v1.0.2) (2020-07-22)
 
 

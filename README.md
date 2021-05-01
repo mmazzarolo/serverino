@@ -72,12 +72,12 @@ Usage
 
 ## Contributing
 
-Each contribute is welcome!  
+Each contribution is welcome!  
 Please, checkout the [contributing guidelines](./CONTRIBUTING.md).
 
 ## License
 
-Is released under [AGPL-3.0 - GNU Affero General Public License v3.0](./LICENSE.md).
+Serverino is released under [AGPL-3.0 - GNU Affero General Public License v3.0](./LICENSE.md).
 
 ### Briefly:
 

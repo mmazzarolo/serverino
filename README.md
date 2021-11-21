@@ -81,7 +81,7 @@ Serverino is released under [AGPL-3.0 - GNU Affero General Public License v3.0](
 
 ### Briefly:
 
-- modification and redistribution allowed for both private and **commercial use**
+- modification and redistribution are allowed for both private and **commercial use**
 - you must **grant patent right to the owner and to all the contributors**
 - you must **keep it open source** and distribute under the **same license**
 - changes must be documented
